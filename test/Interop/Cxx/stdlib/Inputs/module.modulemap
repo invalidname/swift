@@ -105,3 +105,8 @@ module StdExpected {
   requires cplusplus
   export *
 }
+
+module IncludeMath {
+  header "include-math.h"
+  export *
+}
