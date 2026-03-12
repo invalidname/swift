@@ -6,9 +6,7 @@ Perform asynchronous and parallel operations.
 
 ### Essentials
 
-- <doc:code-along-elevating-an-app-with-swift-concurrency>
-- <doc:updating-an-app-to-use-strict-concurrency>
-- <doc://com.apple.documentation/documentation/swift/updating_an_app_to_use_swift_concurrency>
+- <doc:AdoptingSwift6>
 
 ### Tasks
 

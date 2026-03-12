@@ -30,13 +30,6 @@ see [Concurrency][concurrency] in [The Swift Programming Language][tspl].
 
 ### Decide when to upgrade to strict checking
 
-Xcode 16 supports the new Swift 6 language mode,
-which uses strict checking for concurrency,
-and it also still includes the Swift 5, 4.2, and 4 language modes.
-The Swift 6 language mode is opt-in:
-Your projects continue to build with their current language mode,
-and new projects default to the Swift 5 language mode.
-
 Adopting the Swift 6 language mode
 can significantly improve the quality of your app
 by catching mistakes in concurrent code at compile time.
