@@ -7,12 +7,11 @@
 Create a new range using the half-open range operator (`..<`).
 
 - ``Swift/Comparable/..<(_:_:)``
+- ``Swift/Range/init(_:)-(ClosedRange<Bound>)``
 
 ### Converting Ranges
 
 - ``Swift/Range/relative(to:)``
-- ``Swift/Range/init(_:in:)-5cclx``
-- ``Swift/Range/init(_:in:)-5qfor``
 
 ### Inspecting a Range
 
@@ -22,17 +21,14 @@ Create a new range using the half-open range operator (`..<`).
 
 ### Checking for Containment
 
-- ``Swift/Range/contains(_:)``
+- ``Swift/Range/contains(_:)-(Bound)``
+- ``Swift/Range/contains(_:)-(ClosedRange<Bound>)``
+- ``Swift/Range/contains(_:)-(Range<Bound>)``
 - ``Swift/Range/~=(_:_:)``
 
 ### Clamping a Range
 
 - ``Swift/Range/clamped(to:)``
-
-### Working with Foundation Ranges
-
-- ``Swift/Range/init(_:)-15u6b``
-- ``Swift/Range/init(_:)-1q7lu``
 
 ### Comparing Ranges
 
@@ -56,7 +52,11 @@ Create a new range using the half-open range operator (`..<`).
 - ``Swift/Range/encode(to:)``
 - ``Swift/Range/init(from:)``
 
+### Destructuring a Range
+
+- ``destructure``
+
 ### Infrequently Used Functionality
 
 - ``Swift/Range/init(uncheckedBounds:)``
-- ``Swift/Range/hashValue``
+- ``Swift/Range/init(_:)-(Range<Bound>)``

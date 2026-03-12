@@ -12,6 +12,7 @@ these initializers.
 - ``Swift/Dictionary/init(uniqueKeysWithValues:)``
 - ``Swift/Dictionary/init(_:uniquingKeysWith:)``
 - ``Swift/Dictionary/init(grouping:by:)``
+- ``Swift/Dictionary/init(_:)``
 
 ### Inspecting a Dictionary
 
@@ -30,6 +31,9 @@ these initializers.
 - ``Swift/Dictionary/first``
 - ``Swift/Dictionary/randomElement()``
 - ``Swift/Dictionary/randomElement(using:)``
+- ``Swift/Dictionary/init(dictionaryLiteral:)``
+- ``Swift/Dictionary/init(_:)``
+- ``Swift/Dictionary/indices``
 
 ### Adding Keys and Values
 
@@ -68,6 +72,8 @@ these initializers.
 - ``Swift/Dictionary/firstIndex(where:)``
 - ``Swift/Dictionary/min(by:)``
 - ``Swift/Dictionary/max(by:)``
+- ``Swift/Dictionary/indices``
+- ``Swift/Dictionary/Element``
 
 ### Transforming a Dictionary
 
@@ -98,39 +104,15 @@ these initializers.
 - ``Swift/Dictionary/customMirror``
 - ``Swift/Dictionary/hash(into:)``
 
-### Using a Dictionary as a Data Value
-
-- ``Swift/Dictionary/init(from:)-5zhfu``
-
-### Reference Types
-
-Use bridged reference types when you need reference semantics or Foundation-specific
-behavior.
-
-- <doc://com.apple.documentation/documentation/foundation/nsdictionary>
-- <doc://com.apple.documentation/documentation/foundation/nsmutabledictionary>
-
 ### Supporting Types
 
 - ``Swift/Dictionary/Keys-swift.struct``
 - ``Swift/Dictionary/Values-swift.struct``
 - ``Swift/Dictionary/Index``
-- ``Swift/Dictionary/Indices-swift.typealias``
 - ``Swift/Dictionary/Iterator``
+- ``Swift/Dictionary/Element``
 
-### Converting Between Dictionaries and Create ML Types
-
-- ``Swift/Dictionary/init(from:)-a452``
-- ``Swift/Dictionary/dataValue``
-- ``Swift/Dictionary/dataValueType``
-
-### Creating a Dictionary from an Attribute Container
-
-- ``Swift/Dictionary/init(_:including:)-7afz2``
-- ``Swift/Dictionary/init(_:including:)-8ls7v``
-- ``Swift/Dictionary/init(_:)``
 
 ### Infrequently Used Functionality
 
 - ``Swift/Dictionary/init(dictionaryLiteral:)``
-- ``Swift/Dictionary/hashValue``

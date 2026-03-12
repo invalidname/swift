@@ -1,4 +1,4 @@
-# ``Distributed``
+# Distributed
 
 Build systems that run distributed code across multiple processes and devices.
 
@@ -25,12 +25,12 @@ You use three main parts when writing code with distributed actors:
   and structures that encapsulate information about calls to a distributed actor.
 
 - A *distributed actor system*, also called a cluster runtime,
-  provides an implementation of the ``DistributedActorSystem`` protocol
+  provides an implementation of the ``Distributed/DistributedActorSystem`` protocol
   and coordinates between the cluster's nodes.
   A distributed actor is always part of some distributed actor system;
   that distributed actor system handles the serialization and networking
   necessary to perform remote method calls.
-  For local testing, you can use ``LocalTestingDistributedActorSystem``.
+  For local testing, you can use ``Distributed/LocalTestingDistributedActorSystem``.
   For production,
   you can use the distributed actor system
   from the [Swift Distributed Actors][runtime] library,

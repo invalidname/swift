@@ -14,8 +14,6 @@
 - ``Swift/ThrowingTaskGroup/addTaskUnlessCancelled(name:priority:operation:)``
 - ``Swift/ThrowingTaskGroup/addImmediateTask(name:priority:executorPreference:operation:)``
 - ``Swift/ThrowingTaskGroup/addImmediateTaskUnlessCancelled(name:priority:executorPreference:operation:)``
-- ``Swift/Throwingtaskgroup/addimmediatetaskunlesscancelled(name:priority:executorpreference:operation:)``
-- ``Swift/Throwingtaskgroup/addimmediatetask(name:priority:executorpreference:operation:)``
 
 ### Accessing Individual Results
 
@@ -37,7 +35,10 @@
 - ``Swift/ThrowingTaskGroup/dropFirst(_:)``
 - ``Swift/ThrowingTaskGroup/filter(_:)``
 - ``Swift/ThrowingTaskGroup/first(where:)``
-- ``Swift/ThrowingTaskGroup/flatMap(_:)``
+- ``Swift/ThrowingTaskGroup/flatMap(_:)-dwsi``
+- ``Swift/ThrowingTaskGroup/flatMap(_:)-319er``
+- ``Swift/ThrowingTaskGroup/flatMap(_:)-8ved0``
+- ``Swift/ThrowingTaskGroup/flatMap(_:)->AsyncThrowingFlatMapSequence<Self,SegmentOfResult>``
 - ``Swift/ThrowingTaskGroup/map(_:)-58nrv``
 - ``Swift/ThrowingTaskGroup/map(_:)-4a4ju``
 - ``Swift/ThrowingTaskGroup/max()``

@@ -30,8 +30,8 @@ Fortify your code with runtime checks, and examine your values' runtime represen
 - ``Swift/Mirror``
 - ``Swift/ObjectIdentifier``
 - ``Swift/type(of:)``
-- ``Swift/==(_:_:)-w1qf``
-- ``Swift/!=(_:_:)-6s4z0``
+- ``Swift/==(_:_:)-(,_)``
+- ``Swift/!=(_:_:)-(,_)``
 
 ### Customizing Your Type's Reflection
 

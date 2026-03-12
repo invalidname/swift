@@ -20,7 +20,9 @@ Create a new range using the closed range operator (`...`).
 
 ### Checking for Containment
 
-- ``Swift/ClosedRange/contains(_:)``
+- ``Swift/ClosedRange/contains(_:)-(Bound)``
+- ``Swift/ClosedRange/contains(_:)-(ClosedRange<Bound>)``
+- ``Swift/ClosedRange/contains(_:)-(Range<Bound>)``
 - ``Swift/ClosedRange/~=(_:_:)``
 
 ### Clamping a Range
@@ -52,4 +54,3 @@ Create a new range using the closed range operator (`...`).
 ### Infrequently Used Functionality
 
 - ``Swift/ClosedRange/init(uncheckedBounds:)``
-- ``Swift/ClosedRange/hashValue``

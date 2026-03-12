@@ -16,6 +16,7 @@ Allocate and manage memory manually.
 - ``Swift/UTF8Span``
 - ``Swift/MutableSpan``
 - ``Swift/MutableRawSpan``
+- ``Swift/OutputRawSpan``
 
 ### Typed Pointers
 

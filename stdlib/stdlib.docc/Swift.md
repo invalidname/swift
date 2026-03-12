@@ -43,7 +43,6 @@ and community, visit [Swift.org](https://swift.org).
 
 ### Essentials
 
-- <doc://com.apple.documentation/documentation/updates/swift>
 - <doc:AdoptingSwift6>
 
 ### Standard Library
@@ -57,19 +56,19 @@ and community, visit [Swift.org](https://swift.org).
 
 ### Observation
 
-- <doc:Observation>
+- <doc:Observation-collection>
 
 ### Distributed Actors
 
-- <doc:Distributed>
+- <doc:Distributed-collection>
 
 ### Regular Expression DSL
 
-- <doc:RegexBuilder>
+- <doc:RegexBuilder-collection>
 
 ### Low-Level Atomic Operations
 
-- <doc:Synchronization>
+- <doc:Synchronization-collection>
 
 ### Data Modeling
 
@@ -81,18 +80,10 @@ and community, visit [Swift.org](https://swift.org).
 - <doc:maintaining-state-in-your-apps>
 - <doc:preventing-timing-problems-when-using-closures>
 
-### Language Interoperability with Objective-C and C
+### Language Interoperability with C and C++
 
-- <doc:objective-c-and-c-code-customization>
-- <doc:migrating-your-objective-c-code-to-swift>
-- <doc:cocoa-design-patterns>
-- <doc:handling-dynamically-typed-methods-and-objects-in-swift>
-- <doc:using-objective-c-runtime-features-in-swift>
-- <doc:imported-c-and-objective-c-apis>
-- <doc:calling-objective-c-apis-asynchronously>
-
-### Language Interoperability with C++
-
-- <doc:MixingLanguagesInAnXcodeProject>
-- <doc:CallingAPIsAcrossLanguageBoundaries>
+- <doc:customizing-your-c-code-for-swift>
+- <doc:using-imported-c-structs-and-unions-in-swift>
+- <doc:using-imported-c-functions-in-swift>
+- <doc:using-imported-c-macros-in-swift>
  

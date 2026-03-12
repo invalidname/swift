@@ -19,12 +19,9 @@
 - ``Swift/Double/init(_:)-5h7qh``
 - ``Swift/Double/init(_:)-aeox``
 - ``Swift/Double/init(_:)-9z7ob``
-- ``Swift/Double/init(_:)-78cjc``
-- ``Swift/Double/init(_:)-7ag2w``
 - ``Swift/Double/init(sign:exponent:significand:)``
 - ``Swift/Double/init(signOf:magnitudeOf:)-4olpd``
 - ``Swift/Double/init(_:)-1oh9r``
-- ``Swift/Double/init(truncating:)``
 
 ### Converting with No Loss of Precision
 
@@ -38,7 +35,6 @@ any loss of precision.
 - ``Swift/Double/init(exactly:)-7cl0t``
 - ``Swift/Double/init(exactly:)-50ofc``
 - ``Swift/Double/init(exactly:)-63925``
-- ``Swift/Double/init(exactly:)-8e00y``
 
 ### Creating a Random Value
 
@@ -58,7 +54,6 @@ any loss of precision.
 - ``Swift/Double/formRemainder(dividingBy:)``
 - ``Swift/Double/truncatingRemainder(dividingBy:)``
 - ``Swift/Double/formTruncatingRemainder(dividingBy:)``
-- ``Swift/Double/scale(by:)``
 - ``Swift/Double/negate()-43dca``
 
 ### Rounding Values
@@ -83,7 +78,6 @@ any loss of precision.
 ### Finding the Sign and Magnitude
 
 - ``Swift/Double/magnitude-swift.property``
-- ``Swift/Double/magnitudeSquared``
 - ``Swift/Double/sign``
 - ``Swift/Double/Magnitude-swift.typealias``
 
@@ -122,7 +116,6 @@ any loss of precision.
 - ``Swift/Double/init(nan:signaling:)``
 - ``Swift/Double/Exponent-swift.typealias``
 - ``Swift/Double/RawSignificand``
-- ``Swift/Double/RawExponent``
 
 ### Querying a Double's State
 
@@ -143,7 +136,7 @@ any loss of precision.
 
 ### Creating a Range
 
-- ``Swift/Double/.._(_:_:)``
+- ``Swift/Double/..<(_:_:)``
 - ``Swift/Double/...(_:_:)``
 
 ### Describing a Double
@@ -153,25 +146,15 @@ any loss of precision.
 - ``Swift/Double/customMirror``
 - ``Swift/Double/hash(into:)``
 
-### Using a Double as a Data Value
-
-- ``Swift/Double/init(from:)-5gnqe``
-- ``Swift/Double/dataValue``
-- ``Swift/Double/dataValueType``
-
 ### Infrequently Used Functionality
 
 - ``Swift/Double/init()``
 - ``Swift/Double/init(floatLiteral:)``
 - ``Swift/Double/init(integerLiteral:)-605xp``
 - ``Swift/Double/init(integerLiteral:)-6hc7j``
-- ``Swift/Double/FloatLiteralType``
-- ``Swift/Double/IntegerLiteralType``
 - ``Swift/Double/advanced(by:)``
 - ``Swift/Double/distance(to:)``
-- ``Swift/Double/Stride``
 - ``Swift/Double/write(to:)``
-- ``Swift/Double/hashValue``
 
 ### SIMD-Supporting Types
 
@@ -186,4 +169,3 @@ any loss of precision.
 ### Deprecated
 
 - ``Swift/Double/customPlaygroundQuickLook``
-- ``Swift/Double/init(_:)-8kme5``

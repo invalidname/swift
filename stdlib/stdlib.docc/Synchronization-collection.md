@@ -1,4 +1,4 @@
-# ``Synchronization``
+# Synchronization
 
 Build synchronization constructs using low-level, primitive operations.
 

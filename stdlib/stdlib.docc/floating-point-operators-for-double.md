@@ -22,10 +22,10 @@ Perform arithmetic and bitwise operations or compare values.
 
 - ``Swift/Double/==(_:_:)-12hdv``
 - ``Swift/Double/!=(_:_:)``
-- ``Swift/Double/_(_:_:)-7lwp5``
-- ``Swift/Double/_=(_:_:)-5yoz7``
-- ``Swift/Double/_(_:_:)-552jp``
-- ``Swift/Double/_=(_:_:)-9o6h8``
+- ``Swift/Double/<(_:_:)-7lwp5``
+- ``Swift/Double/<=(_:_:)-5yoz7``
+- ``Swift/Double/>(_:_:)-552jp``
+- ``Swift/Double/>=(_:_:)-9o6h8``
 
 ### Negation
 
@@ -34,6 +34,6 @@ Perform arithmetic and bitwise operations or compare values.
 
 ### Range Expressions
 
-- ``Swift/Double/.._(_:)``
+- ``Swift/Double/..<(_:)``
 - ``Swift/Double/...(_:)-4mm67``
 - ``Swift/Double/...(_:)-6ct5v``

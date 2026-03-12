@@ -44,7 +44,6 @@
 
 - ``Swift/Unicode/Scalar/...(_:)-9u9rz``
 - ``Swift/Unicode/Scalar/...(_:)-7lhvp``
-- ``Swift/Unicode/Scalar/...(_:_:)-629xh``
 - ``Swift/Unicode/Scalar/...(_:_:)``
 - ``Swift/Unicode/Scalar/..<(_:)``
 - ``Swift/Unicode/Scalar/..<(_:_:)``

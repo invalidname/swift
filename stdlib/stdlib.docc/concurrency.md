@@ -15,8 +15,6 @@ Perform asynchronous and parallel operations.
 - ``Swift/Task``
 - ``Swift/TaskGroup``
 - ``Swift/withTaskGroup(of:returning:isolation:body:)``
-- ``Swift/Task(name:priority:)``
-- ``Swift/Task(on:name:priority:)``
 - ``Swift/ThrowingTaskGroup``
 - ``Swift/withThrowingTaskGroup(of:returning:isolation:body:)``
 - ``Swift/TaskPriority``
@@ -72,6 +70,9 @@ Perform asynchronous and parallel operations.
 - ``Swift/JobPriority``
 - ``Swift/UnownedSerialExecutor``
 - ``Swift/UnownedTaskExecutor``
+- ``Swift/UnimplementedMainExecutor``
+- ``Swift/UnimplementedTaskExecutor``
+- ``SchedulingExecutor``
 - ``Swift/globalConcurrentExecutor``
 - ``Swift/withTaskExecutorPreference(_:isolation:operation:)``
 
@@ -79,16 +80,9 @@ Perform asynchronous and parallel operations.
 
 - ``Swift/MainExecutor``
 - ``Swift/RunLoopExecutor``
-- ``Swift/SchedulableExecutor``
 - ``Swift/ExecutorFactory``
 - ``Swift/PlatformExecutorFactory``
 
-- ``Swift/CFMainExecutor``
-- ``Swift/CFTaskExecutor``
-- ``Swift/DispatchGlobalTaskExecutor``
-- ``Swift/DispatchMainExecutor``
-- ``Swift/DummyMainExecutor``
-- ``Swift/DummyTaskExecutor``
 
 ### Deprecated
 

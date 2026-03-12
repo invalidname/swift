@@ -8,7 +8,6 @@ In addition to creating a string from a single string literal, you can also crea
 an empty string, a string containing an existing group of characters, or a string
 repeating the contents of another string.
 
-- ``Swift/String/init(decoding:)-nm7v``
 - ``Swift/String/init()``
 - ``Swift/String/init(_:)-8v3fo``
 - ``Swift/String/init(_:)-8og6g``
@@ -27,34 +26,12 @@ repeating the contents of another string.
 ### Creating a String from Unicode Data
 
 - ``Swift/String/init(_:)-8ay23``
-- ``Swift/String/init(data:encoding:)``
 - ``Swift/String/init(validatingUTF8:)-208fn``
-- ``Swift/String/init(validating:as:)-84qr9``
-- ``Swift/String/init(validating:as:)-5cw2c``
-- ``Swift/String/init(utf8String:)-8qmaq``
-- ``Swift/String/init(utf8String:)-3mcco``
-- ``Swift/String/init(utf16CodeUnits:count:)``
-- ``Swift/String/init(utf16CodeUnitsNoCopy:count:freeWhenDone:)``
+- ``Swift/String/init(validating:as:)-(Sequence<Encoding.CodeUnit>,_)``
+- ``Swift/String/init(validating:as:)-(Sequence<Int8>,_)``
 - ``Swift/String/init(decoding:as:)``
-
-### Creating a String Using Formats
-
-- ``Swift/String/init(format:_:)``
-- ``Swift/String/init(format:arguments:)``
-- ``Swift/String/init(format:locale:_:)``
-- ``Swift/String/init(format:locale:arguments:)``
-- ``Swift/String/localizedStringWithFormat(_:_:)``
-
-### Creating a Localized String
-
-- ``Swift/String/init(localized:table:bundle:locale:comment:)``
-- ``Swift/String/init(localized:options:table:bundle:locale:comment:)``
-- ``Swift/String/LocalizationValue``
-- ``Swift/String/LocalizationOptions``
-- ``Swift/String/init(localized:defaultValue:table:bundle:locale:comment:)``
-- ``Swift/String/init(localized:defaultValue:options:table:bundle:locale:comment:)``
-- ``Swift/String/init(localized:)``
-- ``Swift/String/init(localized:options:)``
+- ``Swift/String/init(_:)-3rgu``
+- ``Swift/String/init(copying:)``
 
 ### Converting Numeric Values
 
@@ -62,16 +39,25 @@ repeating the contents of another string.
 
 ### Converting a C String
 
-- ``Swift/String/init(bytes:encoding:)``
-- ``Swift/String/init(bytesNoCopy:length:encoding:freeWhenDone:)``
 - ``Swift/String/init(validatingCString:)-992vo``
 - ``Swift/String/init(validatingCString:)-98wra``
 - ``Swift/String/init(cString:)-2p84k``
 - ``Swift/String/init(cString:)-6kr8s``
-- ``Swift/String/init(cString:encoding:)-3h7bc``
-- ``Swift/String/init(cString:encoding:)-3qgzd``
 - ``Swift/String/init(decodingCString:as:)-8way7``
 - ``Swift/String/decodeCString(_:as:repairingInvalidCodeUnits:)-46n2p``
+- ``Swift/String/init(cString:)-472zs``
+- ``Swift/String/init(cString:)-54awj``
+
+### Converting a C++ String
+
+- ``Swift/String/init(_:)-4bhtc``
+- ``Swift/String/init(_:)-753pq``
+- ``Swift/String/init(_:)-779lt``
+- ``Swift/String/init(_:)-7i93e``
+- ``Swift/String/init(_:)-871md``
+- ``Swift/String/init(_:)-8h97e``
+- ``Swift/String/init(_:)-lk68``
+- ``Swift/String/init(_:)-p219``
 
 ### Converting Other Types to Strings
 
@@ -81,15 +67,6 @@ repeating the contents of another string.
 - ``Swift/String/init(describing:)-6ttci``
 - ``Swift/String/init(describing:)-67ncf``
 - ``Swift/String/init(reflecting:)``
-
-### Creating a String from a File or URL
-
-- ``Swift/String/init(contentsOf:)``
-- ``Swift/String/init(contentsOf:encoding:)``
-- ``Swift/String/init(contentsOf:usedEncoding:)``
-- ``Swift/String/init(contentsOfFile:)``
-- ``Swift/String/init(contentsOfFile:encoding:)``
-- ``Swift/String/init(contentsOfFile:usedEncoding:)``
 
 ### Writing to a File or URL
 
@@ -158,14 +135,14 @@ that different representations of a string compare as being equal.
 - ``Swift/String/==(_:_:)-8kzxf``
 - ``Swift/String/!=(_:_:)-1bb05``
 - ``Swift/String/!=(_:_:)-frzf``
-- ``Swift/String/_(_:_:)-1incq``
-- ``Swift/String/_(_:_:)-8d1wy``
-- ``Swift/String/_=(_:_:)-1ih6``
-- ``Swift/String/_=(_:_:)-5y22v``
-- ``Swift/String/_(_:_:)-24u5x``
-- ``Swift/String/_(_:_:)-6o7qv``
-- ``Swift/String/_=(_:_:)-8lyim``
-- ``Swift/String/_=(_:_:)-nd86``
+- ``Swift/String/<(_:_:)-1incq``
+- ``Swift/String/<(_:_:)-8d1wy``
+- ``Swift/String/<=(_:_:)-1ih6``
+- ``Swift/String/<=(_:_:)-5y22v``
+- ``Swift/String/>(_:_:)-24u5x``
+- ``Swift/String/>(_:_:)-6o7qv``
+- ``Swift/String/>=(_:_:)-8lyim``
+- ``Swift/String/>=(_:_:)-nd86``
 - ``Swift/String/~=(_:_:)``
 
 ### Comparing Characters
@@ -190,6 +167,8 @@ that different representations of a string compare as being equal.
 
 ### Finding Characters
 
+- ``Swift/String/characters``
+- ``Swift/String/utf8Span``
 - ``Swift/String/contains(_:)``
 - ``Swift/String/allSatisfy(_:)``
 - ``Swift/String/contains(where:)``
@@ -205,6 +184,8 @@ that different representations of a string compare as being equal.
 - ``Swift/String/min()``
 - ``Swift/String/min(_:_:)``
 - ``Swift/String/min(by:)``
+- ``Swift/String/characterMap()``
+- ``Swift/String/scalarMap()``
 
 ### Getting Substrings
 
@@ -233,9 +214,6 @@ that different representations of a string compare as being equal.
 
 ### Working with Encodings
 
-- ``Swift/String/availableStringEncodings``
-- ``Swift/String/defaultCStringEncoding``
-- ``Swift/String/localizedName(of:)``
 - ``Swift/String/isContiguousUTF8``
 - ``Swift/String/makeContiguousUTF8()``
 - ``Swift/String/withUTF8(_:)``
@@ -243,6 +221,7 @@ that different representations of a string compare as being equal.
 ### Working with String Views
 
 - ``Swift/String/unicodeScalars``
+- ``Swift/String/UnicodeScalarIndex``
 - ``Swift/String/init(_:)-2t931``
 - ``Swift/String/init(_:)-11jx3``
 - ``Swift/String/utf16``
@@ -260,6 +239,7 @@ that different representations of a string compare as being equal.
 - ``Swift/String/reduce(_:_:)``
 - ``Swift/String/reduce(into:_:)``
 - ``Swift/String/lazy``
+- ``Swift/String/withMutableCharacters(_:)``
 
 ### Iterating over a String's Characters
 
@@ -284,13 +264,17 @@ that different representations of a string compare as being equal.
 
 ### Working with Paths
 
-- ``Swift/String/init(_:)-3a5mh``
-- ``Swift/String/init(validatingUTF8:)-6i0in``
+- ``Swift/String/init(validatingUTF8:)-(String)``
+- ``Swift/String/init(validatingUTF8:)-(UnsafePointer<CChar>)``
+- ``Swift/String/init(validatingUTF8:)-([CChar])``
+- ``Swift/String/init(validatingUTF8:)-(CChar)``
 
 ### Manipulating Indices
 
 - ``Swift/String/startIndex``
 - ``Swift/String/endIndex``
+- ``Swift/String/allIndices(includingEnd:)``
+- ``Swift/String/dumpIndices()``
 - ``Swift/String/index(after:)``
 - ``Swift/String/formIndex(after:)``
 - ``Swift/String/index(before:)``
@@ -300,13 +284,14 @@ that different representations of a string compare as being equal.
 - ``Swift/String/formIndex(_:offsetBy:)``
 - ``Swift/String/formIndex(_:offsetBy:limitedBy:)``
 - ``Swift/String/distance(from:to:)``
+- ``Swift/String/isOnGraphemeClusterBoundary(_:)``
 - ``Swift/String/indices-swift.property``
 
 ### Creating a Range Expression
 
-- ``Swift/String/.._(_:_:)``
+- ``Swift/String/..<(_:_:)``
 - ``Swift/String/...(_:_:)``
-- ``Swift/String/.._(_:)``
+- ``Swift/String/..<(_:)``
 - ``Swift/String/...(_:)-4mm4o``
 - ``Swift/String/...(_:)-6ct5g``
 
@@ -320,42 +305,37 @@ that different representations of a string compare as being equal.
 - ``Swift/String/description``
 - ``Swift/String/debugDescription``
 - ``Swift/String/customMirror``
-- ``Swift/String/hashValue``
 - ``Swift/String/hash(into:)``
-
-### Using a String as a Data Value
-
-- ``Swift/String/init(from:)-gcys``
-- ``Swift/String/dataValue``
-- ``Swift/String/identifierValue``
-- ``Swift/String/dataValueType``
 
 ### Infrequently Used Functionality
 
 - ``Swift/String/index(of:)``
-- ``Swift/String/init(_:)-5a5lw``
 - ``Swift/String/init(stringInterpolation:)-1jjv``
 - ``Swift/String/init(stringLiteral:)``
 - ``Swift/String/init(unicodeScalarLiteral:)``
 - ``Swift/String/init(extendedGraphemeClusterLiteral:)``
 - ``Swift/String/customPlaygroundQuickLook``
 - ``Swift/String/withContiguousStorageIfAvailable(_:)``
-
-### Reference Types
-
-Use bridged reference types when you need reference semantics or Foundation-specific
-behavior.
-
-- <doc://com.apple.documentation/documentation/foundation/nsstring>
-- <doc://com.apple.documentation/documentation/foundation/nsmutablestring>
+- ``Swift/String/init(cString:)-1gatt``
+- ``Swift/String/init(cString:)-295hy``
+- ``Swift/String/init(cString:)-cgw2``
+- ``Swift/String/init(decodingCString:as:)-2zmjc``
+- ``Swift/String/init(decodingCString:as:)-534rp``
+- ``Swift/String/init(validatingCString:)-1x5p0``
+- ``Swift/String/init(validatingCString:)-7gjlg``
+- ``Swift/String/IndexDistance``
+- ``Swift/String/decodeCString(_:as:repairingInvalidCodeUnits:)-2l7u6``
+- ``Swift/String/decodeCString(_:as:repairingInvalidCodeUnits:)-9pdmv``
+- ``Swift/String/decodeCString(_:as:repairingInvalidCodeUnits:)-3mvvy``
 
 ### Related String Types
 
 - ``Swift/Substring``
 - ``Swift/StringProtocol``
 - ``Swift/String/Index``
+- ``Swift/String/CharacterView``
 - ``Swift/String/UnicodeScalarView``
 - ``Swift/String/UTF16View``
 - ``Swift/String/UTF8View``
 - ``Swift/String/Iterator``
-- ``Swift/String/Encoding``
+- ``Swift/String/Output``

@@ -26,10 +26,5 @@
 
 ### Comparing Results
 
-- ``Swift/Result/==(_:_:)``
 - ``Swift/Result/!=(_:_:)``
 
-### Publishing a Result
-
-- ``Swift/Result/publisher-swift.property``
-- ``Swift/Result/Publisher-swift.struct``

@@ -53,16 +53,10 @@
 - ``Swift/AsyncSequence/compactMap(_:)-1f8zn``
 - ``Swift/AsyncThrowingCompactMapSequence``
 - ``Swift/AsyncFlatMapSequence``
-- ``Swift/AsyncSequence/flatMap(_:)``
+- ``Swift/AsyncSequence/flatMap(_:)-5rn1j``
+- ``Swift/AsyncSequence/flatMap(_:)-54rrt``
+- ``Swift/AsyncSequence/flatMap(_:)-4bl9a``
+- ``Swift/AsyncSequence/flatMap(_:)->AsyncThrowingFlatMapSequence<Self,SegmentOfResult>``
 - ``Swift/AsyncThrowingFlatMapSequence``
 - ``Swift/AsyncSequence/reduce(_:_:)``
 - ``Swift/AsyncSequence/reduce(into:_:)``
-
-### Adapting Textual Sequences
-
-- ``Swift/AsyncSequence/characters``
-- <doc://com.apple.documentation/documentation/foundation/asynccharactersequence>
-- ``Swift/AsyncSequence/unicodeScalars``
-- <doc://com.apple.documentation/documentation/foundation/asyncunicodescalarsequence>
-- ``Swift/AsyncSequence/lines``
-- <doc://com.apple.documentation/documentation/foundation/asynclinesequence>

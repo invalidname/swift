@@ -11,7 +11,6 @@
 - ``Swift/asyncDetached(priority:operation:)-79mp7``
 - ``Swift/detach(priority:operation:)-2h9ty``
 - ``Swift/detach(priority:operation:)-4948v``
-- ``Swift/swift_deletedAsyncMethodError()``
 
 ### Deprecated Type Aliases
 

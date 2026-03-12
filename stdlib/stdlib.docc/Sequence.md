@@ -59,12 +59,6 @@
 - ``Swift/Sequence/shuffled()``
 - ``Swift/Sequence/shuffled(using:)``
 
-### Formatting a Sequence
-
-- ``Swift/Sequence/formatted()``
-- ``Swift/Sequence/formatted(_:)``
-- <doc://com.apple.documentation/documentation/foundation/listformatstyle>
-
 ### Splitting and Joining Elements
 
 - ``Swift/Sequence/split(maxSplits:omittingEmptySubsequences:whereSeparator:)``
@@ -85,16 +79,3 @@
 ### Accessing Underlying Storage
 
 - ``Swift/Sequence/withContiguousStorageIfAvailable(_:)-4don7``
-
-### Publishing a Sequence
-
-- ``Swift/Sequence/publisher``
-
-### Applying AppKit Graphic Operations
-
-Use a sequence of rectangles and other types to perform operations on an AppKit graphic
-context.
-
-- ``Swift/Sequence/fill(using:)-l1te``
-- ``Swift/Sequence/fill(using:)-45en6``
-- ``Swift/Sequence/clip()``

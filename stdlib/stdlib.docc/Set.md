@@ -124,14 +124,6 @@ In addition to using an array literal, you can also create a set using these ini
 - ``Swift/Set/debugDescription``
 - ``Swift/Set/customMirror``
 
-### Reference Types
-
-Use bridged reference types when you need reference semantics or Foundation-specific
-behavior.
-
-- <doc://com.apple.documentation/documentation/foundation/nsset>
-- <doc://com.apple.documentation/documentation/foundation/nsmutableset>
-
 ### Supporting Types
 
 - ``Swift/Set/Index``

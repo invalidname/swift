@@ -1,4 +1,4 @@
-# ``Observation/ObservationTracked``
+# ``Observation/ObservationTracked()``
 
 @Metadata {
     @DocumentationExtension(mergeBehavior: override)

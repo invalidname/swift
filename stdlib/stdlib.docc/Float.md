@@ -19,11 +19,9 @@
 - ``Swift/Float/init(_:)-1kp2p``
 - ``Swift/Float/init(_:)-975tv``
 - ``Swift/Float/init(_:)-11orc``
-- ``Swift/Float/init(_:)-5soww``
 - ``Swift/Float/init(_:)-ussz``
 - ``Swift/Float/init(signOf:magnitudeOf:)-8aey5``
 - ``Swift/Float/init(sign:exponent:significand:)``
-- ``Swift/Float/init(truncating:)``
 
 ### Converting with No Loss of Precision
 
@@ -34,7 +32,6 @@ any loss of precision.
 - ``Swift/Float/init(exactly:)-89na7``
 - ``Swift/Float/init(exactly:)-89pn7``
 - ``Swift/Float/init(exactly:)-6l5fa``
-- ``Swift/Float/init(exactly:)-zknq``
 - ``Swift/Float/init(exactly:)-1h1oe``
 - ``Swift/Float/init(exactly:)-8ho5q``
 
@@ -138,7 +135,7 @@ any loss of precision.
 
 ### Creating a Range
 
-- ``Swift/Float/.._(_:_:)``
+- ``Swift/Float/..<(_:_:)``
 - ``Swift/Float/...(_:_:)``
 
 ### Describing a Float
@@ -147,7 +144,6 @@ any loss of precision.
 - ``Swift/Float/description``
 - ``Swift/Float/debugDescription``
 - ``Swift/Float/customMirror``
-- ``Swift/Float/hashValue``
 
 ### SIMD-Supporting Types
 
@@ -171,5 +167,4 @@ any loss of precision.
 
 ### Deprecated
 
-- ``Swift/Float/init(_:)-7dbrz``
 - ``Swift/Float/customPlaygroundQuickLook``

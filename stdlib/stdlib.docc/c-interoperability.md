@@ -4,7 +4,7 @@ Use imported C types or call C variadic functions.
 
 ## Topics
 
-### C and Objective-C Pointers
+### C Pointers
 
 - ``Swift/OpaquePointer``
 - ``Swift/AutoreleasingUnsafeMutablePointer``

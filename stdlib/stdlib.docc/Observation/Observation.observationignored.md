@@ -1,4 +1,4 @@
-# ``Observation/ObservationIgnored``
+# ``Observation/ObservationIgnored()``
 
 @Metadata {
     @DocumentationExtension(mergeBehavior: override)

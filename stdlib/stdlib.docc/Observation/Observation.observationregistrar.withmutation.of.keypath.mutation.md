@@ -12,3 +12,4 @@ calls ``didSet(_:keyPath:)`` after the mutation.
 - Parameters:
 	- subject: An instance of an observable type.
 	- keyPath: The key path of an observed property.
+  - mutation: A closure that provides the mutation to apply.

@@ -7,7 +7,6 @@ Measure how long an operation takes and determine schedules in the future.
 ### Clocks
 
 - ``Swift/Clock``
-- ``Swift/ClockTraits``
 - ``Swift/ContinuousClock``
 - ``Swift/SuspendingClock``
 

@@ -4,18 +4,18 @@
 
 ### Comparable Requirements
 
-- ``Swift/Comparable/_(_:_:)-9jp4d``
-- ``Swift/Comparable/_=(_:_:)-buc5``
-- ``Swift/Comparable/_(_:_:)-8j02g``
-- ``Swift/Comparable/_=(_:_:)-4hu01``
+- ``Swift/Comparable/<(_:_:)-9jp4d``
+- ``Swift/Comparable/<=(_:_:)-buc5``
+- ``Swift/Comparable/>(_:_:)-8j02g``
+- ``Swift/Comparable/>=(_:_:)-4hu01``
 
 ### Range Expressions
 
-- ``Swift/Comparable/.._(_:_:)``
+- ``Swift/Comparable/..<(_:_:)``
 - ``Swift/Comparable/...(_:_:)``
 - ``Swift/Comparable/...(_:)-6mvrh``
 - ``Swift/Comparable/...(_:)-1quco``
-- ``Swift/Comparable/.._(_:)``
+- ``Swift/Comparable/..<(_:)``
 
 ### Tuple Comparison
 

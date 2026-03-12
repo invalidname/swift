@@ -5,4 +5,3 @@
 ### Type Aliases
 
 - ``Swift/UnfoldFirstSequence``
-- ``Swift/UnfoldSequence/Iterator``

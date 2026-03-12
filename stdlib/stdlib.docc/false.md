@@ -1,7 +1,6 @@
 # ``Swift/false``
 
 @Metadata {
-    @AlternateRepresentation("doc://com.apple.documentation/documentation/ObjectiveC/NO")
     @PageImage(purpose: icon, source: keyword-icon)
     @Available("Swift", introduced: "1.0")
 }

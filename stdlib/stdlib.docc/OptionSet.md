@@ -12,7 +12,3 @@ integer, like `Int`, as the `RawValue` type.
 ### Element
 
 - ``Swift/OptionSet/Element``
-
-### Generating Conformance
-
-- ``Swift/OptionSet()``

@@ -9,8 +9,6 @@
 - ``Swift/Int/init(clamping:)``
 - ``Swift/Int/init(truncatingIfNeeded:)``
 - ``Swift/Int/init(bitPattern:)-72037``
-- ``Swift/Int/init(exactly:)-177ax``
-- ``Swift/Int/init(truncating:)``
 
 ### Converting Floating-Point Values
 
@@ -19,7 +17,6 @@
 - ``Swift/Int/init(_:)-2oscb``
 - ``Swift/Int/init(_:)-3huv0``
 - ``Swift/Int/init(_:)-66i0w``
-- ``Swift/Int/init(_:)-5q6q5``
 
 ### Converting with No Loss of Precision
 
@@ -119,13 +116,6 @@ a pointer or class instance.
 - ``Swift/Int/hash(into:)``
 - ``Swift/Int/customMirror``
 
-### Using an Integer as a Data Value
-
-- ``Swift/Int/init(from:)-kl1p``
-- ``Swift/Int/dataValue``
-- ``Swift/Int/identifierValue``
-- ``Swift/Int/dataValueType``
-
 ### Infrequently Used Functionality
 
 - ``Swift/Int/init()``
@@ -133,13 +123,10 @@ a pointer or class instance.
 - ``Swift/Int/IntegerLiteralType``
 - ``Swift/Int/distance(to:)``
 - ``Swift/Int/advanced(by:)``
-- ``Swift/Int/Stride``
-- ``Swift/Int/hashValue``
 
 ### Deprecated
 
 - ``Swift/Int/customPlaygroundQuickLook``
-- ``Swift/Int/init(_:)-3mb3q``
 
 ### SIMD-Supporting Types
 

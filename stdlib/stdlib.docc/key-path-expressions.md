@@ -9,7 +9,6 @@ Use key-path expressions to access properties dynamically.
 - ``Swift/KeyPath``
 - ``Swift/PartialKeyPath``
 - ``Swift/AnyKeyPath``
-- ``Swift/_AppendKeyPath``
 
 ### Writable Key Paths
 

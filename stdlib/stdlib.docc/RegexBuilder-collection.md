@@ -1,4 +1,4 @@
-# ``RegexBuilder``
+# RegexBuilder
 
 Use an expressive domain-specific language to build regular expressions,
 for operations like searching and replacing in text.
@@ -44,6 +44,7 @@ if let match = text.firstMatch(of: emailPattern) {
 
 ### Components
 
+- ``Swift/RegexComponent``
 - ``RegexBuilder/CharacterClass``
 - ``RegexBuilder/Anchor``
 - ``RegexBuilder/Lookahead``
@@ -67,6 +68,5 @@ if let match = text.firstMatch(of: emailPattern) {
 
 ### Builders
 
-- ``RegexBuilder/RegexComponent``
 - ``RegexBuilder/RegexComponentBuilder``
 - ``RegexBuilder/AlternationBuilder``

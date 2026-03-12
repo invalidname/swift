@@ -1,4 +1,4 @@
-# ``Observation``
+# Observation
 
 Make responsive apps that update the presentation when underlying data changes.
 
@@ -60,15 +60,11 @@ property.
 
 ### Fine-tuning
 
-- ``Observation/ObservationIgnored``
-- ``Observation/ObservationTracked``
+- ``Observation/ObservationIgnored()``
+- ``Observation/ObservationTracked()``
 
 ### Change tracking
 
 - ``Observation/withObservationTracking(_:onChange:)``
 - ``Observation/ObservationRegistrar``
 
-### Observation in SwiftUI
-
-- <doc://com.apple.documentation/documentation/SwiftUI/Managing-model-data-in-your-app>
-- <doc://com.apple.documentation/documentation/SwiftUI/Migrating-from-the-observable-object-protocol-to-the-observable-macro>

@@ -178,11 +178,7 @@ In addition to using an array literal, you can also create an array using these 
 ### Encoding and Decoding
 
 - ``Swift/Array/encode(to:)``
-- ``Swift/Array/encode(to:configuration:)``
-- ``Swift/Array/EncodingConfiguration``
 - ``Swift/Array/init(from:)-6rmxq``
-- ``Swift/Array/init(from:configuration:)``
-- ``Swift/Array/DecodingConfiguration``
 
 ### Describing an Array
 
@@ -191,36 +187,26 @@ In addition to using an array literal, you can also create an array using these 
 - ``Swift/Array/customMirror``
 - ``Swift/Array/hash(into:)``
 
-### Converting Between Arrays and Create ML Types
-
-- ``Swift/Array/init(_:)-2ln1a``
-- ``Swift/Array/init(_:)-86ka8``
-- ``Swift/Array/init(from:)-51fkv``
-- ``Swift/Array/dataValue``
-- ``Swift/Array/dataValueType``
-
 ### Related Array Types
 
 - ``Swift/ContiguousArray``
 - ``Swift/ArraySlice``
-
-### Reference Types
-
-Use bridged reference types when you need reference semantics or Foundation-specific
-behavior.
-
-- <doc://com.apple.documentation/documentation/foundation/nsarray>
-- <doc://com.apple.documentation/documentation/foundation/nsmutablearray>
 
 ### Supporting Types
 
 - ``Swift/Array/Index``
 - ``Swift/Array/Indices``
 - ``Swift/Array/Iterator``
-- ``Swift/Array/ArrayLiteralElement``
-- ``Swift/Array/SubSequence``
+
+### Working with Spans
+- ``Swift/Array/span``
+- ``Swift/Array/mutableSpan``
+
+### Working with Array Differentiation
+- ``Swift/Array/differentiableMap(_:)``
+- ``Swift/Array/differentiableReduce(_:_:)``
+- ``Swift/Array/DifferentiableView``
 
 ### Infrequently Used Functionality
 
 - ``Swift/Array/init(arrayLiteral:)``
-- ``Swift/Array/hashValue``

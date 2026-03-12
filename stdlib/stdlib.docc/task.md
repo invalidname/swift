@@ -4,18 +4,10 @@
 
 ### Creating a Task
 
-- ``Swift/Task/init(priority:operation:)-7f0zv``
-- ``Swift/Task/init(priority:operation:)-ntwf``
 - ``Swift/Task/init(name:priority:operation:)-2dll5``
 - ``Swift/Task/init(name:priority:operation:)-43wmk``
 - ``Swift/Task/init(name:executorPreference:priority:operation:)-59bfi``
 - ``Swift/Task/init(name:executorPreference:priority:operation:)-81pay``
-- ``Swift/Task/init(executorPreference:priority:operation:)-7zpzv``
-- ``Swift/Task/init(executorPreference:priority:operation:)-6o27o``
-- ``Swift/Task/detached(priority:operation:)-d24l``
-- ``Swift/Task/detached(priority:operation:)-1g00u``
-- ``Swift/Task/detached(executorPreference:priority:operation:)-1y7ms``
-- ``Swift/Task/detached(executorPreference:priority:operation:)-7vnfx``
 - ``Swift/Task/currentPriority``
 - ``Swift/Task/basePriority``
 - ``Swift/withTaskPriorityEscalationHandler(operation:onPriorityEscalated:isolation:)``
@@ -69,7 +61,6 @@
 
 - ``Swift/Task/==(_:_:)``
 - ``Swift/Task/!=(_:_:)``
-- ``Swift/Task/hashValue``
 - ``Swift/Task/hash(into:)``
 
 ### Deprecated
@@ -85,7 +76,5 @@
 - ``Swift/Task/suspend()``
 - ``Swift/Task/runDetached(priority:operation:)-88zf5``
 - ``Swift/Task/runDetached(priority:operation:)-8s8lh``
-- ``Swift/Task/startSynchronously(name:priority:_:)-38jhc``
-- ``Swift/Task/startSynchronously(name:priority:_:)-47sar``
 - ``Swift/Task/withCancellationHandler(handler:operation:)``
 - ``Swift/Task/withGroup(resultType:returning:body:)``

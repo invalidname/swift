@@ -17,10 +17,10 @@ also convert a unicode scalar value or single-character string.
 
 - ``Swift/Character/==(_:_:)``
 - ``Swift/Character/!=(_:_:)``
-- ``Swift/Character/_(_:_:)-3jyg1``
-- ``Swift/Character/_=(_:_:)-1ihf``
-- ``Swift/Character/_(_:_:)-24u5o``
-- ``Swift/Character/_=(_:_:)-8lyhz``
+- ``Swift/Character/<=(_:_:)``
+- ``Swift/Character/<=(_:_:)-1ihf``
+- ``Swift/Character/>(_:_:)-24u5o``
+- ``Swift/Character/>=(_:_:)-8lyhz``
 
 ### Working with a Character’s Unicode Values
 
@@ -58,10 +58,9 @@ also convert a unicode scalar value or single-character string.
 
 ### Creating a Range Expression
 
-- ``Swift/Character/.._(_:_:)``
+- ``Swift/Character/..<(_:_:)``
 - ``Swift/Character/...(_:_:)``
-- ``Swift/Character/...(_:_:)-16g2a``
-- ``Swift/Character/.._(_:)``
+- ``Swift/Character/..<(_:)``
 - ``Swift/Character/...(_:)-4mm4x``
 - ``Swift/Character/...(_:)-6ct59``
 

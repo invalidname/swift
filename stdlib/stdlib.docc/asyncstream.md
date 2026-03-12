@@ -49,6 +49,3 @@
 - ``Swift/AsyncStream/makeAsyncIterator()``
 - ``Swift/AsyncStream/Iterator``
 
-### Supporting Types
-
-- ``Swift/AsyncStream/AsyncIterator``

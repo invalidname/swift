@@ -11,7 +11,9 @@
 - ``Swift/Duration/milliseconds(_:)-7ledy``
 - ``Swift/Duration/microseconds(_:)-1zzcc``
 - ``Swift/Duration/microseconds(_:)-2majo``
-- ``Swift/Duration/nanoseconds(_:)``
+- ``Swift/Duration/nanoseconds(_:)-(Double)``
+- ``Swift/Duration/nanoseconds(_:)-(T)``
+- ``Swift/Duration/init(attoseconds:)``
 
 ### Accessing a duration's components
 
@@ -25,9 +27,6 @@
 - ``Swift/Duration//=(_:_:)-10rgx``
 - ``Swift/Duration//=(_:_:)-1qfv3``
 
-### Formatting a duration
+### Converting a duration
 
-- ``Swift/Duration/formatted()``
-- ``Swift/Duration/formatted(_:)``
-- ``Swift/Duration/TimeFormatStyle``
-- ``Swift/Duration/UnitsFormatStyle``
+- ``Swift/Duration/attoseconds``
