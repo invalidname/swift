@@ -68,7 +68,7 @@ generates code and adds that code
 in the location where where you call the macro.
 For example,
 the `Predicate` macro in the code above creates an instance of the
-<doc://com.apple.documentation/documentation/foundation/predicate> structure.
+Swift Foundation `Predicate` structure.
 
 For more information,
 see [Macros][macros] in [The Swift Programming Language][tspl].

@@ -43,9 +43,6 @@ You use three main parts when writing code with distributed actors:
 
 ## Topics
 
-### Essentials
-
-- <doc://com.apple.documentation/documentation/swift/tictacfish_implementing_a_game_using_distributed_actors>
 
 ### Distributed Actors
 

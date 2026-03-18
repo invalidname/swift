@@ -48,7 +48,7 @@ identity operator (`===`). It also means that when you share a class instance ac
 your app, changes you make to that instance are visible to every part of your code
 that holds a reference to that instance. Use classes when you need your instances
 to have this kind of identity. Common use cases are file handles, network connections,
-and shared hardware intermediaries like <doc://com.apple.documentation/documentation/corebluetooth/cbcentralmanager>.
+and shared hardware intermediaries.
 
 For example, if you have a type that represents a local database connection, the
 code that manages access to that database needs full control over the state of the

@@ -151,7 +151,7 @@ extension Player: Hashable {
 }
 ```
 
-#### Use All Significant Properties for Equatable and Hashable
+### Use All Significant Properties for Equatable and Hashable
 
 When implementing the `==` method and the `hash(into:)` method, use all the properties
 that affect whether two instances of your custom type are considered equal. In the
@@ -167,33 +167,3 @@ so the cached value should be excluded from comparison and hashing.
 > Important: Always use the same properties in both your `==` and `hash(into:)` methods.
 Using different groups of properties in the two methods can lead to unexpected behavior
 or performance when using your custom type in sets and dictionaries.
-
-### Customize NSObject Subclass Behavior
-
-`NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols,
-with equality based on instance identity. If you need to customize this behavior,
-override the <doc://com.apple.documentation/documentation/objectivec/nsobjectprotocol/isequal(_:)>
-method and <doc://com.apple.documentation/documentation/objectivec/nsobjectprotocol/hash>
-property instead of the `==` operator method and `hashValue` property.
-
-```swift
-extension MyNSObjectSubclass {
-    override func isEqual(_ object: Any?) -> Bool {
-        guard let other = object as? MyNSObjectSubclass
-            else { return false }
-        return self.firstProperty == other.firstProperty 
-            && self.secondProperty == other.secondProperty
-    }
-
-    override var hash: Int {
-        var hasher = Hasher()
-        hasher.combine(firstProperty)
-        hasher.combine(secondProperty)
-        return hasher.finalize()
-    }
-}
-```
-
-As noted in the previous section, two instances that are considered equal must have
-the same hash value. If you override one of these declarations, you must also override
-the other to maintain that guarantee.

@@ -6,7 +6,6 @@ Serialize and deserialize instances of your types with implicit or customized en
 
 ### Custom Encoding and Decoding
 
-- <doc://com.apple.documentation/documentation/foundation/encoding-and-decoding-custom-types>
 - ``Swift/Codable``
 - ``Swift/Encodable``
 - ``Swift/Decodable``
