@@ -1009,7 +1009,8 @@ void SILGenFunction::emitClassConstructorAllocator(ConstructorDecl *ctor) {
     }
 
     selfValue = B.createAllocRefDynamic(Loc, allocArg, selfTy,
-                                        useObjCAllocation, false, {}, {});
+                                        useObjCAllocation, false,
+                                        StackAllocationIsNested, {}, {});
   } else {
     assert(ctor->isDesignatedInit());
     // For a designated initializer, we know that the static type being
@@ -1017,6 +1018,7 @@ void SILGenFunction::emitClassConstructorAllocator(ConstructorDecl *ctor) {
     // initializer.
     F.setIsExactSelfClass(IsExactSelfClass);
     selfValue = B.createAllocRef(Loc, selfTy, useObjCAllocation, false, false,
+                                 StackAllocationIsNested,
                                  ArrayRef<SILType>(), ArrayRef<SILValue>());
   }
   args.push_back(selfValue);
@@ -1811,7 +1813,7 @@ void SILGenFunction::emitInitAccessor(AccessorDecl *accessor) {
 
   emitEpilog(accessor);
 
-  mergeCleanupBlocks();
+  finalizeEmission();
 }
 
 void SILGenFunction::emitPropertyWrappedFieldInitAccessor(
@@ -1921,5 +1923,5 @@ void SILGenFunction::emitPropertyWrappedFieldInitAccessor(
 
   // Emit epilog/cleanups
   emitEpilog(Loc);
-  mergeCleanupBlocks();
+  finalizeEmission();
 }
