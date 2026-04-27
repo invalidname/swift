@@ -422,6 +422,7 @@ static void getLibStdCxxFileMapping(
       "bits/valarray_array.h", "bits/valarray_before.h", "bits/version.h",
       // C++20 and newer:
       "barrier",
+      "bit",
       "compare",
       "concepts",
       "format",
@@ -433,6 +434,11 @@ static void getLibStdCxxFileMapping(
       "span",
       "stop_token",
       "syncstream",
+      // C++23 and newer:
+      "expected",
+      "flat_map",
+      "flat_set",
+      "mdspan",
     };
   std::string additionalHeaderDirectives;
   llvm::raw_string_ostream os(additionalHeaderDirectives);
