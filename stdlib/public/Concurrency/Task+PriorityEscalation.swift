@@ -40,7 +40,6 @@ extension Task {
   /// This method can be called from any task or thread.
   ///
   /// - Parameters:
-  ///   - task: the task which to escalate the priority of
   ///   - newPriority: the new priority the task should continue executing on
   @available(SwiftStdlib 6.2, *)
   public func escalatePriority(to newPriority: TaskPriority) {
@@ -73,7 +72,6 @@ extension UnsafeCurrentTask {
   /// This method can be called from any task or thread.
   ///
   /// - Parameters:
-  ///   - task: the task which to escalate the priority of
   ///   - newPriority: the new priority the task should continue executing on
   @available(SwiftStdlib 6.2, *)
   public func escalatePriority(to newPriority: TaskPriority) {

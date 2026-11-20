@@ -28,7 +28,7 @@ import Swift
 /// the continuation can only be used once.
 ///
 /// To create a continuation
-/// call ``withContinuation(of:throwing:_:)``.
+/// call ``withContinuation(of:throwing:_:)->Success``.
 ///
 /// To resume the task, suspended on a continuation, call ``resume(returning:)-5fa8w``,
 /// ``resume(throwing:)``, ``resume(with:)``, or ``resume()``.
@@ -218,7 +218,7 @@ public nonisolated(nonsending) func withContinuation<Success: ~Copyable>(
 /// the continuation is resumed.
 ///
 /// It must be waited on exactly once and cannot leave the
-/// ``withContinuation(of:throwing:_:)`` scope it was passed into, and it traps
+/// ``withContinuation(of:throwing:_:)->BodyResult`` scope it was passed into, and it traps
 /// if it is destroyed without being waited on.
 @available(SwiftStdlib 6.5, *)
 @safe
@@ -280,10 +280,10 @@ public struct ContinuationWaiter<Success: ~Copyable, Failure: Error>: ~Copyable,
   /// ```
   ///
   /// - Parameters:
-  ///   - onCancel: Run with the reason the task was cancelled with when it is
+  ///   - handleCancellation: Run with the reason the task was cancelled with when it is
   ///     cancelled while suspended here. It may run concurrently with the
   ///     resumption, and on any thread.
-  ///   - onPriorityEscalated: Run once when `wait` is called, and then when the
+  ///   - handlePriorityEscalation: Run once when `wait` is called, and then when the
   ///     task's priority is escalated while suspended here. The first argument
   ///     is the old priority (before escalation), and the second argument is
   ///     the new escalated priority. It may run concurrently with the
@@ -317,7 +317,7 @@ public struct ContinuationWaiter<Success: ~Copyable, Failure: Error>: ~Copyable,
   /// function suspends.
   ///
   /// - Parameters:
-  ///   - onCancel: Run with the reason the task was cancelled with when it is
+  ///   - handleCancellation: Run with the reason the task was cancelled with when it is
   ///     cancelled while suspended here. It may run concurrently with the
   ///     resumption, and on any thread.
   @export(implementation)
@@ -354,7 +354,7 @@ public struct ContinuationWaiter<Success: ~Copyable, Failure: Error>: ~Copyable,
   /// ```
   ///
   /// - Parameters:
-  ///   - onPriorityEscalated: Run once when `wait` is called, and then when the
+  ///   - handlePriorityEscalation: Run once when `wait` is called, and then when the
   ///     task's priority is escalated while suspended here. The first argument
   ///     is the old priority (before escalation), and the second argument is
   ///     the new escalated priority. It may run concurrently with the

@@ -123,6 +123,8 @@ import Swift
 ///     If `nil` it is interpreted as "no preference" and calling this method
 ///     will have no impact on execution semantics of the `operation`
 ///   - operation: the operation to execute on the passed executor
+///   - isolation: the actor isolation context of the caller, inherited by default.
+///     The `operation` closure runs on this actor when one is provided.
 /// - Returns: the value returned from the `operation` closure
 /// - Throws: if the operation closure throws
 /// - SeeAlso: ``TaskExecutor``

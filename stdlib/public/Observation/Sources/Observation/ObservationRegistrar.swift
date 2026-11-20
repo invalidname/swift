@@ -296,8 +296,9 @@ public struct ObservationRegistrar: Sendable {
   /// This method calls ``willset(_:keypath:)`` before the mutation. Then it
   /// calls ``didset(_:keypath:)`` after the mutation.
   /// - Parameters:
-  ///   - of: An instance of an observable type.
+  ///   - subject: An instance of an observable type.
   ///   - keyPath: The key path of an observed property.
+  ///   - mutation: A closure that performs the mutation of the observed property.
   public func withMutation<Subject: Observable, Member, T>(
     of subject: Subject,
     keyPath: KeyPath<Subject, Member>,

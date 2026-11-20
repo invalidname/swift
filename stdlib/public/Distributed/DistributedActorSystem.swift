@@ -1547,14 +1547,16 @@ public struct ExecuteDistributedTargetError: DistributedActorSystemError {
     case typeDeserializationFailure
 
     /// The actor passed to `executeDistributedTarget` belongs to an actor
-    /// system whose ``InvocationDecoder`` associated type does not match
-    /// the receiving system's ``InvocationDecoder``.
+    /// system whose ``DistributedActorSystem/InvocationDecoder`` associated
+    /// type does not match the receiving system's
+    /// ``DistributedActorSystem/InvocationDecoder``.
     @available(SwiftStdlib 6.5, *)
     case incompatibleInvocationDecoder
 
     /// The actor passed to `executeDistributedTarget` belongs to an actor
-    /// system whose ``ResultHandler`` associated type does not match the
-    /// receiving system's ``ResultHandler``.
+    /// system whose ``DistributedActorSystem/ResultHandler`` associated type
+    /// does not match the receiving system's
+    /// ``DistributedActorSystem/ResultHandler``.
     @available(SwiftStdlib 6.5, *)
     case incompatibleResultHandler
 

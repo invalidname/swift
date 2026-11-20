@@ -287,7 +287,7 @@ extension Never: AtomicRepresentable {
   ///   representation used in atomic operations back into the logical type for
   ///   normal use, `Self`.
   ///
-  /// - Parameter storage: The storage representation for `Self` that's used
+  /// - Parameter representation: The storage representation for `Self` that's used
   ///   within atomic operations.
   /// - Returns: The newly decoded logical type `Self`.
   @available(SwiftStdlib 6.0, *)
@@ -344,7 +344,7 @@ extension Duration: AtomicRepresentable {
   ///   representation used in atomic operations back into the logical type for
   ///   normal use, `Self`.
   ///
-  /// - Parameter storage: The storage representation for `Self` that's used
+  /// - Parameter representation: The storage representation for `Self` that's used
   ///   within atomic operations.
   /// - Returns: The newly decoded logical type `Self`.
   @available(SwiftStdlib 6.0, *)

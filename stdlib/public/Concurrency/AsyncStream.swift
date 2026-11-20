@@ -226,7 +226,7 @@ public struct AsyncStream<Element> {
     /// - Note: Because the system might call the `onTermination` callback as
     /// part of task cancellation, it's subject to the same considerations for
     /// avoiding deadlock as outlined in the documentation for
-    /// ``withTaskCancellationHandler(operation:onCancel:)``.
+    /// ``withTaskCancellationHandler(operation:onCancel:)-(_,()->Void)``.
     public var onTermination: (@Sendable (Termination) -> Void)? {
       get {
         return storage.getOnTermination()
@@ -341,7 +341,7 @@ public struct AsyncStream<Element> {
   /// - Note: Because the system might call the `onCancel` callback as
   /// part of task cancellation, it's subject to the same considerations for
   /// avoiding deadlock as outlined in the documentation for
-  /// ``withTaskCancellationHandler(operation:onCancel:)``.
+  /// ``withTaskCancellationHandler(operation:onCancel:)-(_,()->Void)``.
   @_silgen_name("$sScS9unfolding8onCancelScSyxGxSgyYac_yyYbcSgtcfC")
   @preconcurrency // Original API had `@Sendable` only on `onCancel`
   public init(

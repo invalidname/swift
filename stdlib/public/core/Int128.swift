@@ -201,6 +201,11 @@ extension Int128 {
 
 // MARK: - Non-arithmetic utility conformances
 extension Int128: Equatable {
+  /// Returns a Boolean value indicating whether two values are equal.
+  ///
+  /// - Parameters:
+  ///   - a: A value to compare.
+  ///   - b: Another value to compare.
   @_transparent
   public static func ==(a: Self, b: Self) -> Bool {
     Bool(Builtin.cmp_eq_Int128(a._value, b._value))
@@ -208,6 +213,12 @@ extension Int128: Equatable {
 }
 
 extension Int128: Comparable {
+  /// Returns a Boolean value indicating whether the first value is less than
+  /// the second.
+  ///
+  /// - Parameters:
+  ///   - a: The first value to compare.
+  ///   - b: The second value to compare.
   @_transparent
   public static func <(a: Self, b: Self) -> Bool {
     Bool(Builtin.cmp_slt_Int128(a._value, b._value))
@@ -292,6 +303,11 @@ extension Int128 {
 
 // MARK: - AdditiveArithmetic conformance
 extension Int128: AdditiveArithmetic {
+  /// Returns the sum of two values.
+  ///
+  /// - Parameters:
+  ///   - a: The first value to add.
+  ///   - b: The second value to add.
   @_transparent
   public static func +(a: Self, b: Self) -> Self {
     let (result, overflow) = a.addingReportingOverflow(b)
@@ -306,6 +322,11 @@ extension Int128: AdditiveArithmetic {
     return result
   }
 
+  /// Returns the difference of two values.
+  ///
+  /// - Parameters:
+  ///   - a: The value to subtract from.
+  ///   - b: The value to subtract.
   @_transparent
   public static func -(a: Self, b: Self) -> Self {
     let (result, overflow) = a.subtractingReportingOverflow(b)
@@ -319,6 +340,11 @@ extension Int128: AdditiveArithmetic {
 
 // MARK: - Multiplication and division
 extension Int128 {
+  /// Returns the product of two values.
+  ///
+  /// - Parameters:
+  ///   - a: The first value to multiply.
+  ///   - b: The second value to multiply.
   @_transparent
   public static func *(a: Self, b: Self) -> Self {
     let (result, overflow) = a.multipliedReportingOverflow(by: b)
@@ -329,11 +355,21 @@ extension Int128 {
     return result
   }
 
+  /// Multiplies two values and stores the result in the first value.
+  ///
+  /// - Parameters:
+  ///   - a: The value to multiply, which is updated with the product.
+  ///   - b: The value to multiply `a` by.
   @_transparent
   public static func *=(a: inout Self, b: Self) {
     a = a * b
   }
 
+  /// Returns the quotient of dividing the first value by the second.
+  ///
+  /// - Parameters:
+  ///   - a: The value to divide.
+  ///   - b: The value to divide `a` by.
   @_transparent
   public static func /(a: Self, b: Self) -> Self {
     if _slowPath(b == .zero) {
@@ -345,11 +381,22 @@ extension Int128 {
     return Self(Builtin.sdiv_Int128(a._value, b._value))
   }
 
+  /// Divides the first value by the second and stores the quotient in the first
+  /// value.
+  ///
+  /// - Parameters:
+  ///   - a: The value to divide, which is updated with the quotient.
+  ///   - b: The value to divide `a` by.
   @_transparent
   public static func /=(a: inout Self, b: Self) {
     a = a / b
   }
 
+  /// Returns the remainder of dividing the first value by the second.
+  ///
+  /// - Parameters:
+  ///   - a: The value to divide.
+  ///   - b: The value to divide `a` by.
   @_transparent
   public static func %(a: Self, b: Self) -> Self {
     if _slowPath(b == .zero) {
@@ -364,6 +411,12 @@ extension Int128 {
     return Self(Builtin.srem_Int128(a._value, b._value))
   }
 
+  /// Divides the first value by the second and stores the remainder in the
+  /// first value.
+  ///
+  /// - Parameters:
+  ///   - a: The value to divide, which is updated with the remainder.
+  ///   - b: The value to divide `a` by.
   @_transparent
   public static func %=(a: inout Self, b: Self) {
     a = a % b
@@ -388,27 +441,59 @@ extension Int128: BinaryInteger {
     Words(_value: UInt128(_value))
   }
 
+  /// Stores the result of performing a bitwise AND operation on the two given
+  /// values in the first value.
+  ///
+  /// - Parameters:
+  ///   - a: A value to update.
+  ///   - b: Another value.
   @_transparent
   public static func &=(a: inout Self, b: Self) {
     a._value = Builtin.and_Int128(a._value, b._value)
   }
 
+  /// Stores the result of performing a bitwise OR operation on the two given
+  /// values in the first value.
+  ///
+  /// - Parameters:
+  ///   - a: A value to update.
+  ///   - b: Another value.
   @_transparent
   public static func |=(a: inout Self, b: Self) {
     a._value = Builtin.or_Int128(a._value, b._value)
   }
 
+  /// Stores the result of performing a bitwise XOR operation on the two given
+  /// values in the first value.
+  ///
+  /// - Parameters:
+  ///   - a: A value to update.
+  ///   - b: Another value.
   @_transparent
   public static func ^=(a: inout Self, b: Self) {
     a._value = Builtin.xor_Int128(a._value, b._value)
   }
 
+  /// Stores the result of shifting a value's binary representation to the right
+  /// by the given number of bits, masking the shift amount to the bit width of
+  /// the type, in the first value.
+  ///
+  /// - Parameters:
+  ///   - a: The value to shift, which is updated with the result.
+  ///   - b: The number of bits to shift by.
   @_transparent
   public static func &>>=(a: inout Self, b: Self) {
     let masked = b & 127
     a._value = Builtin.ashr_Int128(a._value, masked._value)
   }
 
+  /// Stores the result of shifting a value's binary representation to the left
+  /// by the given number of bits, masking the shift amount to the bit width of
+  /// the type, in the first value.
+  ///
+  /// - Parameters:
+  ///   - a: The value to shift, which is updated with the result.
+  ///   - b: The number of bits to shift by.
   @_transparent
   public static func &<<=(a: inout Self, b: Self) {
     let masked = b & 127

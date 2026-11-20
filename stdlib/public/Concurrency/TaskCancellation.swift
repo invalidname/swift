@@ -371,7 +371,7 @@ extension Task where Success == Never, Failure == Never {
   /// The reason for the current task's cancellation, or `nil` if the task is
   /// not cancelled.
   ///
-  /// Mirrors ``Task/isCancelled``: once this returns a non-nil value it will
+  /// Mirrors ``Task/isCancelled-type.property``: once this returns a non-nil value it will
   /// consistently return the same value for the remaining life of the task.
   ///
   /// Reading this from outside the context of a task returns `nil`.
@@ -379,12 +379,12 @@ extension Task where Success == Never, Failure == Never {
   /// - Returns: The ``CancellationError/Reason`` that was passed to the
   ///   originating cancellation call (e.g. via
   ///   ``Task/cancel(reason:)``, ``TaskGroup/cancelAll(reason:)``, or
-  ///   ``TaskCancellationScope/cancel(reason:)``), or
+  ///   `TaskCancellationScope.cancel(reason:)`), or
   ///   ``CancellationError/Reason/unspecified`` for tasks cancelled
   ///   through a reasonless entry point. `nil` if the current task is
   ///   not cancelled, or if there is no current task.
   ///
-  /// - SeeAlso: ``Task/isCancelled``
+  /// - SeeAlso: ``Task/isCancelled-type.property``
   /// - SeeAlso: ``CancellationError/Reason``
   @available(StdlibDeploymentTarget 6.5, *)
   @export(implementation)

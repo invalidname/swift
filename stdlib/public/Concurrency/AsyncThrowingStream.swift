@@ -252,7 +252,7 @@ public struct AsyncThrowingStream<Element, Failure: Error> {
     /// - Note: Because the system might call the `onTermination` callback as
     /// part of task cancellation, it's subject to the same considerations for
     /// avoiding deadlock as outlined in the documentation for
-    /// ``withTaskCancellationHandler(operation:onCancel:)``.
+    /// ``withTaskCancellationHandler(operation:onCancel:)-(_,()->Void)``.
     public var onTermination: (@Sendable (Termination) -> Void)? {
       get {
         return storage.getOnTermination()

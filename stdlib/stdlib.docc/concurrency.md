@@ -57,7 +57,8 @@ Perform asynchronous and parallel operations.
 
 - ``Swift/Continuation``
 - ``Swift/withContinuation(of:_:)``
-- ``Swift/withContinuation(of:throwing:_:)``
+- ``Swift/withContinuation(of:throwing:_:)->Success``
+- ``Swift/withContinuation(of:throwing:_:)->BodyResult``
 - ``Swift/CheckedContinuation``
 - ``Swift/withCheckedContinuation(function:_:)``
 - ``Swift/withCheckedThrowingContinuation(function:_:)-13yf6``
